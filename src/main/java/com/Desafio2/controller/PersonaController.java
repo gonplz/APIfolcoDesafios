@@ -28,8 +28,12 @@ public class PersonaController {
     public ResponseEntity<MensajeDTO> add(@RequestBody PersonaDTO personaDTO){
         return ResponseEntity.ok(personaService.add(personaDTO));
     }
-    @GetMapping("/{id}")
-    public ResponseEntity<PersonaDTO> findOne(@PathVariable Integer id) {
-        return ResponseEntity.ok(personaService.findOne(id));
+   // @GetMapping("/{id}")
+   // public ResponseEntity<PersonaDTO> findOne(@PathVariable Integer id) {
+   //     return ResponseEntity.ok(personaService.findOne(id));
+  //  }
+    @GetMapping("/{personaid}")
+    public ResponseEntity<PersonaDTO> findById(@PathVariable Integer personaid){
+        return ResponseEntity.ok(personaService.findById(personaid));
     }
 }
