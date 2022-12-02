@@ -1,4 +1,4 @@
-package com.Desafio2.exceptions;
+package com.Desafio2.exceptions.DTOexeption;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.Desafio2.exceptions;
+package com.Desafio2.exceptions.Kinds;
 
 public class NumeroNotFound extends RuntimeException{
 

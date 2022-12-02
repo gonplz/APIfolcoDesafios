@@ -1,7 +1,6 @@
-package com.Desafio2.repositories;
+package com.Desafio2.Model.repositories;
 
-import com.Desafio2.entity.PersonaEntity;
-import org.hibernate.metamodel.model.convert.spi.JpaAttributeConverter;
+import com.Desafio2.Model.entity.PersonaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

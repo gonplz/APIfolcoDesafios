@@ -1,13 +1,11 @@
 package com.Desafio2.controller;
 
-import com.Desafio2.domain.MensajeDTO;
-import com.Desafio2.domain.PersonaDTO;
+import com.Desafio2.Model.domain.MensajeDTO;
+import com.Desafio2.Model.domain.PersonaDTO;
 import com.Desafio2.service.PersonaService;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.Id;
 import java.util.List;
 
 @RestController

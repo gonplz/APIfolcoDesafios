@@ -1,14 +1,13 @@
 package com.Desafio2.service;
 
-import com.Desafio2.domain.MensajeDTO;
-import com.Desafio2.domain.PersonaDTO;
-import com.Desafio2.entity.PersonaEntity;
-import com.Desafio2.exceptions.NumeroNotFound;
-import com.Desafio2.exceptions.PersonaNotFound;
-import com.Desafio2.mappers.PersonaMapper;
-import com.Desafio2.repositories.PersonaRepository;
+import com.Desafio2.Model.domain.MensajeDTO;
+import com.Desafio2.Model.domain.PersonaDTO;
+import com.Desafio2.Model.entity.PersonaEntity;
+import com.Desafio2.exceptions.Kinds.NumeroNotFound;
+import com.Desafio2.exceptions.Kinds.PersonaNotFound;
+import com.Desafio2.Model.mappers.PersonaMapper;
+import com.Desafio2.Model.repositories.PersonaRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.nio.file.ProviderNotFoundException;
 import java.util.List;

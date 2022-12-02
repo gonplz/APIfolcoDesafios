@@ -1,5 +1,8 @@
-package com.Desafio2.exceptions;
+package com.Desafio2.exceptions.Handler;
 
+import com.Desafio2.exceptions.DTOexeption.ErrorMensajeDTO;
+import com.Desafio2.exceptions.Kinds.NumeroNotFound;
+import com.Desafio2.exceptions.Kinds.PersonaNotFound;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

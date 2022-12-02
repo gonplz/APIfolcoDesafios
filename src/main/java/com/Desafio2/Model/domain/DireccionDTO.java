@@ -1,6 +1,5 @@
-package com.Desafio2.domain;
+package com.Desafio2.Model.domain;
 
-import com.Desafio2.entity.PersonaEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
