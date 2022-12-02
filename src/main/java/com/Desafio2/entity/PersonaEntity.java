@@ -23,4 +23,8 @@ public class PersonaEntity {
 
     @Column( name = "phone", columnDefinition = "VARCHAR(50)")
     private String phone;
+
+    @OneToOne
+    @JoinColumn(name = "Direccion_id")
+    private DireccionEntity direccion;
 }

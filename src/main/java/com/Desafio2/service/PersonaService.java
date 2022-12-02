@@ -3,6 +3,7 @@ package com.Desafio2.service;
 import com.Desafio2.domain.MensajeDTO;
 import com.Desafio2.domain.PersonaDTO;
 import com.Desafio2.entity.PersonaEntity;
+import com.Desafio2.exceptions.NumeroNotFound;
 import com.Desafio2.exceptions.PersonaNotFound;
 import com.Desafio2.mappers.PersonaMapper;
 import com.Desafio2.repositories.PersonaRepository;
@@ -53,7 +54,7 @@ public class PersonaService {
         } else if (personaname != null) {
             throw new PersonaNotFound("El nombre ya está utilizado");
         } else if (personaphone != null) {
-            throw new PersonaNotFound("El número ya está utilizado");
+            throw new NumeroNotFound("El número ya está utilizado");
         } else {return null;}
     }
 }

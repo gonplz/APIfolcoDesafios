@@ -17,10 +17,17 @@ public class GlobalExceptionhandler {
         return new ResponseEntity<>(new ErrorMensajeDTO(e.getMessage(),req.getRequestURI(),"Codigo interno"+" "+20), HttpStatus.INTERNAL_SERVER_ERROR);
     }
     //Esto maneja un problema interno de la API//
+    //Esto valida que el nombre existe y larga el error
     @ExceptionHandler(PersonaNotFound.class)
     @ResponseBody
     public ResponseEntity<ErrorMensajeDTO> notFoundException(HttpServletRequest req, Exception e){
         return new ResponseEntity<>(new ErrorMensajeDTO(e.getMessage(), req.getRequestURI(),"Codigo interno"+" "+20),HttpStatus.NOT_FOUND);
+    }
+    //Esto valida que el numero existe y larga el error
+    @ExceptionHandler(NumeroNotFound.class)
+    @ResponseBody
+    public ResponseEntity<ErrorMensajeDTO> notNumeroFoundException(HttpServletRequest req, Exception e){
+        return new ResponseEntity<>(new ErrorMensajeDTO(e.getMessage(), req.getRequestURI(),"Codigo interno"+" "+20),HttpStatus.BAD_REQUEST);
     }
 
 }
