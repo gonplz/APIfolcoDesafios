@@ -11,5 +11,6 @@ public class PersonaDTO {
     private Integer id;
     private String name;
     private String phone;
+    private DireccionDTO direccion;
 }
 
