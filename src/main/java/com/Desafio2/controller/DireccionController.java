@@ -22,4 +22,6 @@ public class DireccionController {
     @PostMapping
     public ResponseEntity<DireccionEntity> add(@RequestBody DireccionDTO direccionDTO){
         return ResponseEntity.ok(direccionService.add(direccionDTO));}
+
+
 }

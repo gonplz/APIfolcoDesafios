@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -24,6 +25,6 @@ public class DireccionEntity {
     @Column(name = "altura", columnDefinition = "FLOAT")
     private Float altura;
 
-    @OneToOne(mappedBy = "direccion")
-    private PersonaEntity persona;
+    @OneToMany(mappedBy = "direccion")
+    private List<PersonaEntity> persona;
 }

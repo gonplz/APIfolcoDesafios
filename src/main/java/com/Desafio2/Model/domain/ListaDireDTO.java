@@ -4,12 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-
-public class DireccionDTO {
-    private String calle;
-    private Float altura;
+@AllArgsConstructor
+public class ListaDireDTO {
+    private List<DireccionDTO> direccion;
 }
